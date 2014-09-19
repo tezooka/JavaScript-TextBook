@@ -1,0 +1,45 @@
+<!DOC-TYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <!-- <link rel="stylesheet" type="text/css" href=""> -->
+        <!-- <link rel="stylesheet" type="text/css" href=""> -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <h1>
+                    <small>while</small><br>
+                    年齢の選択肢をドロップダウンに表示する
+                </h1>
+            </div>
+        <!-- header --></header>
+
+        <div id="contents">
+        <div class="inner">
+
+        <p>年齢</p>
+        <select name="age">
+            <script type="text/javascript">
+                var i = 10;
+                while(i <= 70){
+                    document.write('<option value="' + i + '">' + i + '歳</option>');
+                    i++;
+                }
+            </script>
+        </select>
+
+        <!-- inner --></div>
+        <!-- contents --></div>
+
+        <footer>
+            <small>
+                <!-- <img src=""> -->
+            </small>
+        <!-- footer --></footer>
+    </body>
+<html>
