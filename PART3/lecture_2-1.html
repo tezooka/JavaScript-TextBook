@@ -1,0 +1,56 @@
+<!DOC-TYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <!-- <link rel="stylesheet" type="text/css" href=""> -->
+        <!-- <link rel="stylesheet" type="text/css" href=""> -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <h1>
+                    <small>onclick</small><br>
+                    ボタンをクリックしたら、確認ウィンドウを表示する
+                </h1>
+            </div>
+        <!-- header --></header>
+
+        <div id="contents">
+        <div class="inner">
+
+        <p>ウィンドウを閉じるには、「とじる」ボタンをクリックしてください。</p>
+        <p class="btn">
+            <input id="btnClose" type="button" value="とじる">
+        </p>
+
+        <div id="content">
+            <p>jQueryを試してみます</p>
+        </div>
+
+        <!-- inner --></div>
+        <!-- contents --></div>
+
+        <footer>
+            <small>
+                <!-- <img src=""> -->
+            </small>
+        <!-- footer --></footer>
+
+        <script type="text/javascript">
+            $('#btnClose').bind('click', function(){
+                if(confirm('閉じてよろしいですか？')){
+                    window.close();
+                } else {
+                    alert('閉じるのを中止しました');
+                }
+            });
+            $('#content p').html('jQueryで内容を書き換えます');
+            $('#content p').css('color', '#f00');
+        </script>
+    </body>
+<html>
