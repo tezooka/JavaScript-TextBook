@@ -1,0 +1,49 @@
+<!DOC-TYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <!-- <link rel="stylesheet" type="text/css" href=""> -->
+        <!-- <link rel="stylesheet" type="text/css" href=""> -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <h1>
+                    <small>slideToggle</small><br>
+                    開閉できるツールボックス
+                </h1>
+            </div>
+        <!-- header --></header>
+
+        <div id="toolBox">
+            <p id="toolTitle"><a href="#toolContent">ファイル</a></p>
+            <div id="toolContent">
+                <ul>
+                    <li>新規</li>
+                    <li>上書き保存</li>
+                    <li>名前を付けて保存</li>
+                    <li>とじる</li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript">
+            $('#toolTitle').bind('click', function(){
+                    $('#toolContent').slideToggle();
+            });
+        </script>
+
+        <footer>
+            <small>
+                <!-- <img src=""> -->
+            </small>
+        <!-- footer --></footer>
+
+
+    </body>
+<html>
